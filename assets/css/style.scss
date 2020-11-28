@@ -1,9 +1,6 @@
 ---
 ---
 
-// According to https://github.com/jekyll/minima/blob/3cdd14d/README.md#customizing-templates, the `@import "minima"` line is unnecessary.
-// However, we run into the following error without it:
-// `Undefined variable: "$text-color"`
-@import "minima";
+// https://github.com/jekyll/minima/blob/3cdd14d/README.md#customizing-templates
 @import "minima/skins/{{ site.minima.skin | default: 'classic' }}";
 @import "minima/initialize";
