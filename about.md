@@ -18,7 +18,7 @@ I'm currently at [Cruise](https://www.getcruise.com/) working on simulation infr
 
 Outside of my core responsibilities, I also spend time on:
 
-- _Making information accessible_: My dashboards summarizing simulation results are among the twenty most utilized at the firm, and cost estimates I added to data on simulation runtime have helped catalyze work to improve simulation efficiency.
+- _Making information accessible_: My dashboards summarizing simulation results are among the twenty most utilized at the firm, and cost estimates I added to data on simulation runtime have helped catalyse work to improve simulation efficiency.
 - _Improving code quality_: Among other things, I applied our lint rules to hundreds of files that were previously manually excluded, and have deleted >1,000,000 lines of dead code across the codebase.
 - _Improving developer tooling_: My custom settings for VSCode are now the default for our main repository used by hundreds of engineers.
 
