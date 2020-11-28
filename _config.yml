@@ -5,9 +5,11 @@ baseurl: "" # the subpath of your site, e.g. /blog
 # Note: the `github-metadata` gem (https://github.com/jekyll/github-metadata/) populates the `url` field.
 
 ## For `minima`
-# https://github.com/jekyll/minima/blob/v2.5.1/README.md
-twitter_username: VincentTjeng
-github_username: vtjeng
+# https://github.com/jekyll/minima/blob/3cdd14d/README.md
+minima:
+  social_links:
+    twitter: VincentTjeng
+    github: vtjeng
 
 ## For `jekyll-seo-tag`
 # https://github.com/jekyll/jekyll-seo-tag/blob/v2.6.1/docs/usage.md
@@ -33,8 +35,8 @@ webmaster_verifications:
   google: m6BwP3x7arDF8eIVihgo63mwrVEZ0d78KW6QPfvP9K0
 
 theme: minima
-## Version of minima in use.
-# Note: It would be nice if we could use the new version of minima, but deployment via GitHub pages forces us to use 2.5.1. https://github.com/jekyll/minima/issues/411 tracks the next release.
+remote_theme: jekyll/minima@3cdd14dff1216f561c68329e0b7420c2dc9b796a
+
 ## KaTeX
 # KaTeX is a good option that is generally faster: https://gendignoux.com/blog/2020/05/23/katex.html
 # However, adding it on GitHub pages is complex: https://karas.io/blog/math-support-with-katex-on-github-pages/, https://github.com/KaTeX/KaTeX/issues/2262

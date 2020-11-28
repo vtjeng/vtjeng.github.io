@@ -1,26 +1,9 @@
 ---
 ---
 
-// https://github.com/jekyll/minima/blob/v2.5.1/README.md#customization
+// According to https://github.com/jekyll/minima/blob/3cdd14d/README.md#customizing-templates, the `@import "minima"` line is unnecessary.
+// However, we run into the following error without it:
+// `Undefined variable: "$text-color"`
 @import "minima";
-
-.footnotes {
-  padding-top: 10px;
-  font-size: 80%;
-}
-
-.byline {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-.byline-links {
-  margin-top: 0;
-  padding-top: 0;
-  font-size: 85%;
-}
-
-a:hover {
-  color: #23c262;
-  text-decoration: none;
-}
+@import "minima/skins/{{ site.minima.skin | default: 'classic' }}";
+@import "minima/initialize";

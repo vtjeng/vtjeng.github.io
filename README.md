@@ -4,11 +4,11 @@
 
 ### Theme
 
-This site uses a lightly-modified version of [`minima==2.5.1`](https://github.com/jekyll/minima/tree/v2.5.1).
+This site uses a lightly-modified version of [`minima@3cdd14d`](https://github.com/jekyll/minima/tree/3cdd14d).
 
 The key differences are:
 
-- Three vendored files in `_includes` from commit `a98a8fed7203738991b98d4f90a80dec3ebcf4f7`:
+- Three vendored files in `_includes`:
   - `head.html` is modified to allow for custom titles.
   - `footer.html` is modified to include only the social links, removing descriptions and contact details.
   - `custom-head.html` adds a favicon and `MathJax` processing.
