@@ -17,7 +17,24 @@ The key differences are:
 
 ### Favicon
 
-I used [RealFaviconGenerator](https://realfavicongenerator.net/) to generate the favicon.
+I used [RealFaviconGenerator](https://realfavicongenerator.net/) to generate the favicon, adding the following assets in the root folder:
+
+```sh
+android-chrome-192x192.png
+android-chrome-512x512.png
+apple-touch-icon.png
+browserconfig.xml
+favicon-16x16.png
+favicon-32x32.png
+favicon.ico
+mstile-150x150.png
+safari-pinned-tab.svg
+site.webmanifest
+```
+
+### Configuring a Custom Domain
+
+To link a domain to GitHub Pages, I added the `CNAME` file and changed the DNS settings with my domain registrar following [these instructions](https://gist.github.com/mapsam/ce60b87eea561ea6bdbf).
 
 ## Local Development
 
