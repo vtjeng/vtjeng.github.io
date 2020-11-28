@@ -1,0 +1,26 @@
+---
+---
+
+// https://github.com/jekyll/minima/blob/v2.5.1/README.md#customization
+@import "minima";
+
+.footnotes {
+  padding-top: 10px;
+  font-size: 80%;
+}
+
+.byline {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.byline-links {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 85%;
+}
+
+a:hover {
+  color: #23c262;
+  text-decoration: none;
+}

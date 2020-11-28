@@ -1,0 +1,43 @@
+title: Vincent Tjeng
+author: ""
+description: My Personal Site
+baseurl: "" # the subpath of your site, e.g. /blog
+# Note: the `github-metadata` gem (https://github.com/jekyll/github-metadata/) populates the `url` field.
+
+## For `minima`
+# https://github.com/jekyll/minima/blob/v2.5.1/README.md
+twitter_username: VincentTjeng
+github_username: vtjeng
+
+## For `jekyll-seo-tag`
+# https://github.com/jekyll/jekyll-seo-tag/blob/v2.6.1/docs/usage.md
+
+twitter:
+  username: VincentTjeng
+  card: summary
+
+social:
+  name: Vincent Tjeng
+  links:
+    - https://twitter.com/VincentTjeng
+    - https://github.com/vtjeng
+
+# https://github.com/jekyll/jekyll-seo-tag/blob/v2.6.1/docs/advanced-usage.md#setting-a-default-image
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/vincent-tjeng.jpg
+
+webmaster_verifications:
+  google: m6BwP3x7arDF8eIVihgo63mwrVEZ0d78KW6QPfvP9K0
+
+theme: minima
+## Version of minima in use.
+# Note: It would be nice if we could use the new version of minima, but deployment via GitHub pages forces us to use 2.5.1. https://github.com/jekyll/minima/issues/411 tracks the next release.
+## KaTeX
+# KaTeX is a good option that is generally faster: https://gendignoux.com/blog/2020/05/23/katex.html
+# However, adding it on GitHub pages is complex: https://karas.io/blog/math-support-with-katex-on-github-pages/, https://github.com/KaTeX/KaTeX/issues/2262
+# One of the issues is that the github-pages gem overrides the kramdown math engine. (See https://github.com/github/pages-gem/pull/545 for more.)
+
+exclude: [README.md]
