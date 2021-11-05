@@ -11,12 +11,14 @@ I currently am working on efficient verification of robustness of neural network
 
 ## Work
 
-I'm currently at [Cruise](https://www.getcruise.com/) working on simulation infrastructure. Some of the problems I've worked on include:
+I'm currently at Google, working on building systems that enable programmers to automatically optimize parameters in their code.
+
+Before Google, I was at [Cruise](https://www.getcruise.com/) for 2+ years, working on simulation infrastructure. Some of the problems I worked on include:
 
 - Designing an expressive and user-friendly system for specifying car data schema migrations, reducing the risk of user error by eliminating verbosity.
 - Disentangling complex dependencies and establishing clear interfaces between sub-modules, allowing for code re-use and more effective caching of simulation output.
 
-Outside of my core responsibilities, I also spend time on:
+Outside of my core responsibilities, I also spent time on:
 
 - _Making information accessible_: My dashboards summarizing simulation results are among the twenty most utilized at the firm, and cost estimates I added to data on simulation runtime have helped catalyze work to improve simulation efficiency.
 - _Improving code quality_: Among other things, I applied our lint rules to hundreds of files that were previously manually excluded, and have deleted >1,000,000 lines of dead code across the codebase.

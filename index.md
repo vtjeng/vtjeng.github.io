@@ -11,7 +11,7 @@ MathJax: True
 <img src="/assets/images/vincent-tjeng.jpg" width="200"/>
 </p>
 
-Hi! I'm Vincent. I'm currently a software engineer at Cruise working on simulation infrastructure for autonomous vehicles. Outside of work, I also study robustness in machine learning. My hobbies include photography and making time-lapse videos, as well as hiking the United States' breathtaking network of national and state parks.
+Hi! I'm Vincent. I'm currently a software engineer at Google, working on building systems that enable programmers to automatically optimize parameters in their code. Outside of work, I also study robustness in machine learning. My hobbies include photography and making time-lapse videos, as well as hiking the United States' breathtaking network of national and state parks.
 
 # Selected Projects
 
