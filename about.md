@@ -32,4 +32,11 @@ I received my B.S. in Electrical Engineering and Computer Science from MIT in 20
 
 My two favorite computer science courses at MIT were [Inference and Information (6.437)](http://web.mit.edu/6.437/www/info17.pdf) by Greg Wornell and [Advanced Algorithms (6.854)](http://people.csail.mit.edu/moitra/854.html) by Ankur Moitra. 6.437 provided a framework for me to properly understand the formalization underpinning ideas such as maximum likelihood estimation and the expectation-maximization algorithm, while 6.854 developed my mathematical maturity by demanding a high degree of rigor.
 
-In addition to those classes, here are some other classes that I really enjoyed: [The World of Charlemagne](https://history.mit.edu/subjects/world-charlemagne) by Eric Goldberg, [Strobe Project Laboratory](https://edgerton.mit.edu/courses/strobe-project-laboratory) by Jim Bales, [Public Finance & Public Policy](http://stellar.mit.edu/S/course/14/fa15/14.41/) by Jonathan Gruber, [Kitchen Chemistry](https://news.mit.edu/2009/kitchen-chemistry-0220) by Patricia Christie, [Art & Science of Negotiation](https://news.mit.edu/2017/class-negotiation-skills-1103) by Bruno Verdini and Linda Rabieh and Anne Hunter's [Continuing Conversations](http://concourse.mit.edu/seminar-offerings/).
+In addition to those classes, here are some other classes that I really enjoyed:
+
+- [The World of Charlemagne](https://history.mit.edu/subjects/world-charlemagne) by Eric Goldberg
+- [Strobe Project Laboratory](https://edgerton.mit.edu/courses/strobe-project-laboratory) by Jim Bales
+- [Public Finance & Public Policy](http://stellar.mit.edu/S/course/14/fa15/14.41/) by Jonathan Gruber
+- [Kitchen Chemistry](https://news.mit.edu/2009/kitchen-chemistry-0220) by Patricia Christie
+- [Art & Science of Negotiation](https://news.mit.edu/2017/class-negotiation-skills-1103) by Bruno Verdini
+- [Continuing Conversations](http://concourse.mit.edu/seminar-offerings/) by Linda Rabieh and Anne McCants
