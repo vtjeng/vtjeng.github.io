@@ -34,7 +34,7 @@ defaults:
 webmaster_verifications:
   google: m6BwP3x7arDF8eIVihgo63mwrVEZ0d78KW6QPfvP9K0
 
-remote_theme: jekyll/minima@3cdd14dff1216f561c68329e0b7420c2dc9b796a
+remote_theme: jekyll/minima@296bf6b872b8450529bee1e48d0ca9be200a4be5
 
 ## KaTeX
 # KaTeX is a good option that is generally faster: https://gendignoux.com/blog/2020/05/23/katex.html
