@@ -4,7 +4,7 @@
 
 ### Theme
 
-This site uses a lightly-modified version of [`minima@3cdd14d`](https://github.com/jekyll/minima/tree/3cdd14d).
+This site uses a lightly-modified version of [`minima@296bf6b`](https://github.com/jekyll/minima/tree/296bf6b).
 
 The key differences are:
 
