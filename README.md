@@ -51,3 +51,9 @@ bundle exec jekyll serve
 ```
 
 Above instructions are from [the official Jekyll site](https://jekyllrb.com/docs/#instructions).
+
+### Updating
+
+```sh
+bundle update
+```
