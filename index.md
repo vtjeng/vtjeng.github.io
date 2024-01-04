@@ -14,7 +14,7 @@ MathJax: True
 I am currently a software engineer at Google DeepMind. I work on enabling programmers to effectively
 deploy machine learning in large-scale production systems, with a focus on reducing engineering
 effort and scope for errors. (Technical details of the work are available
-[here](https://arxiv.org/pdf/2304.13033.pdf)). Outside of work, I also study robustness in machine
+[here](https://arxiv.org/abs/2304.13033)). Outside of work, I also study robustness in machine
 learning. My hobbies include photography and making time-lapse videos, as well as hiking the United
 States' breathtaking network of national and state parks.
 
