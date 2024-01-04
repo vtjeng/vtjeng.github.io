@@ -11,7 +11,7 @@ MathJax: True
 <img src="/assets/images/vincent-tjeng.jpg" width="200"/>
 </p>
 
-I am currently a software engineer at Google DeepMind, working on building systems that enable programmers to automatically optimize parameters in their code. Outside of work, I also study robustness in machine learning. My hobbies include photography and making time-lapse videos, as well as hiking the United States' breathtaking network of national and state parks.
+I am currently a software engineer at Google DeepMind. I work on enabling programmers to effectively deploy machine learning in large-scale production systems, with a focus on reducing engineering effort and scope for errors. (Technical details of the work are available [here](https://arxiv.org/pdf/2304.13033.pdf)). Outside of work, I also study robustness in machine learning. My hobbies include photography and making time-lapse videos, as well as hiking the United States' breathtaking network of national and state parks.
 
 [Google Scholar](https://scholar.google.com/citations?user=GZt32DEAAAAJ) / [GitHub](https://github.com/vtjeng/) / [Twitter](https://twitter.com/VincentTjeng)
 {: .main-links}
