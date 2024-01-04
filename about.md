@@ -5,17 +5,9 @@ permalink: /about/
 description: A bit more about me.
 ---
 
-## Research Interests
-
-I currently am working on efficient verification of robustness of neural networks. As an offshoot of
-my work, I'm also exploring using universal adversarial perturbations to identify neurons activated
-by particular objects, as well as approaches to pruning networks to improve their verifiability
-without significantly decreasing their performance.
-
 ## Work
 
-I'm currently at Google, working on building systems that enable programmers to automatically
-optimize parameters in their code.
+I'm currently at Google DeepMind.
 
 Before Google, I was at [Cruise](https://www.getcruise.com/) for 2+ years, working on simulation
 infrastructure. Some of the problems I worked on include:
