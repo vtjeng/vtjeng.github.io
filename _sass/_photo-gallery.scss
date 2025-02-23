@@ -53,15 +53,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 95vw;
+    width: 85vw; /* Reduced from 95vw to leave space for buttons */
     height: 95vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 60px; /* Add padding for navigation buttons */
+    z-index: 1; /* Ensure it's above the modal background */
 
     img {
-      max-width: calc(95vw - 120px); /* Account for padding on both sides */
+      max-width: 85vw; /* Match container width */
       max-height: 95vh;
       width: auto;
       height: auto;
@@ -99,6 +99,7 @@
     top: 50%;
     transform: translateY(-50%);
     background: rgba(0, 0, 0, 0.5);
+    z-index: 2; /* Ensure buttons are above the image container */
     color: white;
     border: none;
     padding: 15px 20px;
@@ -127,5 +128,6 @@
     font-size: 40px;
     font-weight: bold;
     cursor: pointer;
+    z-index: 2; /* Ensure close button is above the image container */
   }
 }
