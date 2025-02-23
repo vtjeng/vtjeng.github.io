@@ -8,13 +8,41 @@ document.addEventListener("DOMContentLoaded", function () {
 
 let currentImageElement = null;
 
+function showLoadingIndicator() {
+  document.getElementById('modalLoadingIndicator').style.display = 'block';
+}
+
+function hideLoadingIndicator() {
+  document.getElementById('modalLoadingIndicator').style.display = 'none';
+}
+
 function openModal(img) {
   var modal = document.getElementById("photoModal");
   var modalImg = document.getElementById("modalImage");
   modal.style.display = "block";
   currentImageElement = img;
-  // Convert preview URL to full-res URL
-  modalImg.src = img.src.replace(PHOTO_GALLERY_CONFIG.PREVIEW_BASE_URL, PHOTO_GALLERY_CONFIG.FULL_RES_BASE_URL);
+
+  // First show the preview image
+  modalImg.src = img.src;
+  
+  // Show loading indicator
+  showLoadingIndicator();
+
+  // Load the full resolution image
+  const fullResUrl = img.src.replace(PHOTO_GALLERY_CONFIG.PREVIEW_BASE_URL, PHOTO_GALLERY_CONFIG.FULL_RES_BASE_URL);
+  const tempImg = new Image();
+  
+  tempImg.onload = function() {
+    modalImg.src = fullResUrl;
+    hideLoadingIndicator();
+  };
+
+  tempImg.onerror = function() {
+    console.error('Failed to load full resolution image');
+    hideLoadingIndicator();
+  };
+
+  tempImg.src = fullResUrl;
 }
 
 function closeModal() {
