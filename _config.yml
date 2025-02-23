@@ -22,7 +22,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/images/vincent-tjeng.jpg
+      image: /assets/images/vincent-tjeng-wide.jpg
 
 webmaster_verifications:
   google: m6BwP3x7arDF8eIVihgo63mwrVEZ0d78KW6QPfvP9K0
