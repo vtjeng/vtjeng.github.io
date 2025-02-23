@@ -4,3 +4,4 @@
 // https://github.com/jekyll/minima/blob/3cdd14d/README.md#customizing-templates
 @import "minima/skins/{{ site.minima.skin | default: 'classic' }}";
 @import "minima/initialize";
+@import "photo-gallery";
