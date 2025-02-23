@@ -2,7 +2,7 @@
 layout: page
 title: More About Me
 permalink: /about/
-description: Details about my work and some of my favourite experiences at school.
+description: Details about my work, and some of my favourite classes at school.
 ---
 
 ## Work
