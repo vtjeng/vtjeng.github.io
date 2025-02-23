@@ -4,13 +4,6 @@ description: My Personal Site
 baseurl: "" # the subpath of your site, e.g. /blog
 # Note: the `github-metadata` gem (https://github.com/jekyll/github-metadata/) populates the `url` field.
 
-## For `minima`
-# https://github.com/jekyll/minima/blob/3cdd14d/README.md
-minima:
-  social_links:
-    twitter: VincentTjeng
-    github: vtjeng
-
 ## For `jekyll-seo-tag`
 # https://github.com/jekyll/jekyll-seo-tag/blob/v2.6.1/docs/usage.md
 
