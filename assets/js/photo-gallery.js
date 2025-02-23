@@ -63,47 +63,86 @@ export class PhotoGallery {
     this.loadingIndicator.style.display = 'none';
   }
 
+  async loadImage(path, isPreview = false) {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      img.onload = () => resolve(img);
+      img.onerror = () => reject(new Error(`Failed to load image: ${path}`));
+      const baseUrl = isPreview ? PHOTO_GALLERY_CONFIG.PREVIEW_BASE_URL : PHOTO_GALLERY_CONFIG.FULL_RES_BASE_URL;
+      img.src = baseUrl + path;
+    });
+  }
+
+  async openModalWithPath(path, alt) {
+    try {
+      // First load the preview
+      const previewImg = await this.loadImage(path, true);
+      
+      // Show the preview immediately
+      this.modal.style.display = 'block';
+      this.modalImg.src = previewImg.src;
+      this.modalImg.alt = alt;
+      this.currentImageElement = { getAttribute: (attr) => attr === 'data-path' ? path : alt };
+      
+      // Show loading indicator while loading full res
+      this.showLoadingIndicator();
+      
+      // Load the full resolution version
+      const fullResImg = await this.loadImage(path, false);
+      this.modalImg.src = fullResImg.src;
+    } catch (error) {
+      console.error('Failed to load image:', error);
+    } finally {
+      this.hideLoadingIndicator();
+    }
+  }
+
   openModal(img) {
-    this.modal.style.display = 'block';
-    this.currentImageElement = img;
-    this.modalImg.src = img.src;
-    this.showLoadingIndicator();
-
-    const fullResUrl = img.src.replace(
-      PHOTO_GALLERY_CONFIG.PREVIEW_BASE_URL,
-      PHOTO_GALLERY_CONFIG.FULL_RES_BASE_URL
-    );
-
-    const tempImg = new Image();
-    tempImg.onload = () => {
-      this.modalImg.src = fullResUrl;
-      this.hideLoadingIndicator();
-    };
-    tempImg.onerror = () => {
-      console.error('Failed to load full resolution image');
-      this.hideLoadingIndicator();
-    };
-    tempImg.src = fullResUrl;
+    const path = img.getAttribute('data-path');
+    const alt = img.getAttribute('alt');
+    this.openModalWithPath(path, alt);
   }
 
   closeModal() {
     this.modal.style.display = 'none';
   }
 
-  navigatePhotos(direction) {
+  getAllGalleryImages() {
+    // Create a flat array of all images from the data
+    return Object.values(PHOTO_GALLERY_DATA).flat();
+  }
+
+  preloadImage(path) {
+    const fullUrl = PHOTO_GALLERY_CONFIG.FULL_RES_BASE_URL + path;
+    const img = new Image();
+    img.src = fullUrl;
+  }
+
+  async navigatePhotos(direction) {
     if (!this.currentImageElement) return;
 
-    const galleryItems = document.querySelectorAll('.photo-gallery-item img');
-    const galleryArray = Array.from(galleryItems);
-    const currentIndex = galleryArray.indexOf(this.currentImageElement);
+    const allImages = this.getAllGalleryImages();
+    const currentPath = this.currentImageElement.getAttribute('data-path');
+    const currentIndex = allImages.findIndex(img => img.path === currentPath);
 
     if (currentIndex === -1) return;
 
     let newIndex = currentIndex + direction;
-    if (newIndex >= galleryArray.length) newIndex = 0;
-    if (newIndex < 0) newIndex = galleryArray.length - 1;
+    if (newIndex >= allImages.length) newIndex = 0;
+    if (newIndex < 0) newIndex = allImages.length - 1;
 
-    this.openModal(galleryArray[newIndex]);
+    // Get the target image data
+    const newImageData = allImages[newIndex];
+    
+    // Start preloading adjacent images
+    const nextIndex = (newIndex + 1) % allImages.length;
+    const prevIndex = (newIndex - 1 + allImages.length) % allImages.length;
+    // Don't await these, let them load in the background
+    this.loadImage(allImages[nextIndex].path, true);
+    this.loadImage(allImages[prevIndex].path, true);
+    
+    // Open the modal with the new image
+    await this.openModalWithPath(newImageData.path, newImageData.alt);
   }
 
   initializeEventListeners() {
