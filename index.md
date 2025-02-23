@@ -17,9 +17,7 @@ I am currently a software engineer at Google DeepMind. I work on enabling progra
 deploy machine learning in large-scale production systems, with a focus on reducing engineering
 effort and scope for errors. (See [technical details](https://arxiv.org/abs/2304.13033)).
 
-Outside of work, I also study robustness in machine learning. My hobbies include photography and
-making time-lapse videos, as well as hiking the United States' breathtaking network of national and
-state parks.
+Outside of work, my hobbies include photography, Cuban salsa, and hiking.
 
 # Research
 
