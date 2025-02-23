@@ -2,6 +2,7 @@
 layout: page
 title: Blog
 permalink: /blog/
+description: Some technical musings.
 ---
 
 <div class="home">

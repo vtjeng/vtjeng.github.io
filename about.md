@@ -1,8 +1,8 @@
 ---
 layout: page
-title: About
+title: More About Me
 permalink: /about/
-description: A bit more about me.
+description: Details about my work and some of my favourite experiences at school.
 ---
 
 ## Work

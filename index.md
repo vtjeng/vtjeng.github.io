@@ -3,9 +3,7 @@ layout: home
 title-tag: "Vincent Tjeng"
 permalink: /
 # This description is what is used for SEO purposes.
-description:
-  Software engineer interested working on deploying machine learning in large-scale production
-  systems.
+description: An overview of my current work, hobbies, and research.
 MathJax: True
 ---
 
