@@ -20,20 +20,21 @@ The key differences are:
 
 ### Favicon
 
-I used [RealFaviconGenerator](https://realfavicongenerator.net/) to generate the favicon, adding the
-following assets in the root folder:
+I used [RealFaviconGenerator](https://realfavicongenerator.net/) to generate the favicon. The
+favicon assets are stored in the `assets/favicon` directory and include:
 
 ```sh
-android-chrome-192x192.png
-android-chrome-512x512.png
-apple-touch-icon.png
-browserconfig.xml
-favicon-16x16.png
-favicon-32x32.png
-favicon.ico
-mstile-150x150.png
-safari-pinned-tab.svg
-site.webmanifest
+assets/favicon/
+├── android-chrome-192x192.png
+├── android-chrome-512x512.png
+├── apple-touch-icon.png
+├── browserconfig.xml
+├── favicon-16x16.png
+├── favicon-32x32.png
+├── favicon.ico
+├── mstile-150x150.png
+├── safari-pinned-tab.svg
+└── site.webmanifest
 ```
 
 ### Configuring a Custom Domain
