@@ -1,5 +1,5 @@
-import { PHOTO_GALLERY_DATA } from './photo-gallery-data.js';
-import { PHOTO_GALLERY_CONFIG } from './photo-gallery-config.js';
+import { PHOTO_GALLERY_DATA } from "./photo-gallery-data.js";
+import { PHOTO_GALLERY_CONFIG } from "./photo-gallery-config.js";
 
 /**
  * PhotoGallery class manages a responsive photo gallery with modal viewing and navigation.
@@ -14,10 +14,10 @@ export class PhotoGallery {
 
   constructor() {
     this.#currentImageElement = null;
-    this.#modal = document.getElementById('photoModal');
-    this.#modalImg = document.getElementById('modalImage');
-    this.#loadingIndicator = document.getElementById('modalLoadingIndicator');
-    
+    this.#modal = document.getElementById("photoModal");
+    this.#modalImg = document.getElementById("modalImage");
+    this.#loadingIndicator = document.getElementById("modalLoadingIndicator");
+
     this.#initializeEventListeners();
     this.#renderGalleries();
   }
@@ -32,13 +32,13 @@ export class PhotoGallery {
       if (!gallery) return;
 
       const fragment = document.createDocumentFragment();
-      photos.forEach(photo => {
+      photos.forEach((photo) => {
         fragment.appendChild(this.#createPhotoElement(photo));
       });
-      
-      gallery.innerHTML = ''; // Clear existing content
+
+      gallery.innerHTML = ""; // Clear existing content
       gallery.appendChild(fragment);
-      
+
       // Initialize lazy loading for the section
       this.#initializeLazyLoading(gallery);
     });
@@ -51,14 +51,14 @@ export class PhotoGallery {
    * @returns {HTMLElement} Photo element
    */
   #createPhotoElement(photo) {
-    const item = document.createElement('div');
-    item.className = 'photo-gallery-item';
+    const item = document.createElement("div");
+    item.className = "photo-gallery-item";
 
-    const img = document.createElement('img');
-    img.setAttribute('data-path', photo.path);
-    img.setAttribute('data-src', PHOTO_GALLERY_CONFIG.PREVIEW_BASE_URL + photo.path);
-    img.setAttribute('alt', photo.alt);
-    img.setAttribute('loading', 'lazy');
+    const img = document.createElement("img");
+    img.setAttribute("data-path", photo.path);
+    img.setAttribute("data-src", PHOTO_GALLERY_CONFIG.PREVIEW_BASE_URL + photo.path);
+    img.setAttribute("alt", photo.alt);
+    img.setAttribute("loading", "lazy");
 
     item.appendChild(img);
     return item;
@@ -73,12 +73,12 @@ export class PhotoGallery {
     const observer = new IntersectionObserver(
       (entries, observer) => this.#handleIntersection(entries, observer),
       {
-        rootMargin: '50px 0px',
-        threshold: 0.1
-      }
+        rootMargin: "50px 0px",
+        threshold: 0.1,
+      },
     );
 
-    gallery.querySelectorAll('img[data-src]').forEach(img => observer.observe(img));
+    gallery.querySelectorAll("img[data-src]").forEach((img) => observer.observe(img));
   }
 
   /**
@@ -88,11 +88,11 @@ export class PhotoGallery {
    * @param {IntersectionObserver} observer - Observer instance
    */
   #handleIntersection(entries, observer) {
-    entries.forEach(entry => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const img = entry.target;
         img.src = img.dataset.src;
-        img.addEventListener('click', () => this.#openModal(img));
+        img.addEventListener("click", () => this.#openModal(img));
         observer.unobserve(img);
       }
     });
@@ -104,7 +104,7 @@ export class PhotoGallery {
    */
   #showLoadingIndicator() {
     if (this.#loadingIndicator) {
-      this.#loadingIndicator.style.display = 'block';
+      this.#loadingIndicator.style.display = "block";
     }
   }
 
@@ -114,7 +114,7 @@ export class PhotoGallery {
    */
   #hideLoadingIndicator() {
     if (this.#loadingIndicator) {
-      this.#loadingIndicator.style.display = 'none';
+      this.#loadingIndicator.style.display = "none";
     }
   }
 
@@ -130,7 +130,9 @@ export class PhotoGallery {
       const img = new Image();
       img.onload = () => resolve(img);
       img.onerror = () => reject(new Error(`Failed to load image: ${path}`));
-      const baseUrl = isPreview ? PHOTO_GALLERY_CONFIG.PREVIEW_BASE_URL : PHOTO_GALLERY_CONFIG.FULL_RES_BASE_URL;
+      const baseUrl = isPreview
+        ? PHOTO_GALLERY_CONFIG.PREVIEW_BASE_URL
+        : PHOTO_GALLERY_CONFIG.FULL_RES_BASE_URL;
       img.src = baseUrl + path;
     });
   }
@@ -144,16 +146,16 @@ export class PhotoGallery {
   async #openModalWithPath(path, alt) {
     try {
       const previewImg = await this.#loadImage(path, true);
-      
+
       // Show the preview immediately
       this.#showModal(previewImg.src, alt, path);
       this.#showLoadingIndicator();
-      
+
       // Load the full resolution version
       const fullResImg = await this.#loadImage(path, false);
       this.#modalImg.src = fullResImg.src;
     } catch (error) {
-      console.error('Failed to load image:', error);
+      console.error("Failed to load image:", error);
     } finally {
       this.#hideLoadingIndicator();
     }
@@ -167,10 +169,10 @@ export class PhotoGallery {
    * @param {string} path - Image path for tracking
    */
   #showModal(src, alt, path) {
-    this.#modal.style.display = 'block';
+    this.#modal.style.display = "block";
     this.#modalImg.src = src;
     this.#modalImg.alt = alt;
-    this.#currentImageElement = { getAttribute: (attr) => attr === 'data-path' ? path : alt };
+    this.#currentImageElement = { getAttribute: (attr) => (attr === "data-path" ? path : alt) };
   }
 
   /**
@@ -179,8 +181,8 @@ export class PhotoGallery {
    * @param {HTMLImageElement} img - Image element to display
    */
   #openModal(img) {
-    const path = img.getAttribute('data-path');
-    const alt = img.getAttribute('alt');
+    const path = img.getAttribute("data-path");
+    const alt = img.getAttribute("alt");
     this.#openModalWithPath(path, alt);
   }
 
@@ -189,7 +191,7 @@ export class PhotoGallery {
    * @private
    */
   #closeModal() {
-    this.#modal.style.display = 'none';
+    this.#modal.style.display = "none";
   }
 
   /**
@@ -210,14 +212,14 @@ export class PhotoGallery {
     if (!this.#currentImageElement) return;
 
     const allImages = this.#getAllGalleryImages();
-    const currentPath = this.#currentImageElement.getAttribute('data-path');
-    const currentIndex = allImages.findIndex(img => img.path === currentPath);
+    const currentPath = this.#currentImageElement.getAttribute("data-path");
+    const currentIndex = allImages.findIndex((img) => img.path === currentPath);
 
     if (currentIndex === -1) return;
 
     const newIndex = this.#getNewIndex(currentIndex, direction, allImages.length);
     const newImageData = allImages[newIndex];
-    
+
     this.#preloadAdjacentImages(newIndex, allImages);
     await this.#openModalWithPath(newImageData.path, newImageData.alt);
   }
@@ -265,7 +267,7 @@ export class PhotoGallery {
    * @private
    */
   #initializeModalClickListener() {
-    this.#modal.addEventListener('click', (event) => {
+    this.#modal.addEventListener("click", (event) => {
       if (event.target === this.#modal) {
         this.#closeModal();
       }
@@ -277,16 +279,16 @@ export class PhotoGallery {
    * @private
    */
   #initializeKeyboardListeners() {
-    document.addEventListener('keydown', (event) => {
-      if (this.#modal.style.display === 'block') {
-        switch(event.key) {
-          case 'Escape':
+    document.addEventListener("keydown", (event) => {
+      if (this.#modal.style.display === "block") {
+        switch (event.key) {
+          case "Escape":
             this.#closeModal();
             break;
-          case 'ArrowLeft':
+          case "ArrowLeft":
             this.#navigatePhotos(-1);
             break;
-          case 'ArrowRight':
+          case "ArrowRight":
             this.#navigatePhotos(1);
             break;
         }
@@ -299,17 +301,14 @@ export class PhotoGallery {
    * @private
    */
   #initializeNavigationButtons() {
-    document.getElementById('prevButton')
-      .addEventListener('click', () => this.#navigatePhotos(-1));
-    document.getElementById('nextButton')
-      .addEventListener('click', () => this.#navigatePhotos(1));
-    document.querySelector('.close')
-      .addEventListener('click', () => this.#closeModal());
+    document.getElementById("prevButton").addEventListener("click", () => this.#navigatePhotos(-1));
+    document.getElementById("nextButton").addEventListener("click", () => this.#navigatePhotos(1));
+    document.querySelector(".close").addEventListener("click", () => this.#closeModal());
   }
 }
 
 // Initialize the gallery when the DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   new PhotoGallery();
 });
 

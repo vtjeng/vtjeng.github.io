@@ -39,11 +39,9 @@ export const PHOTO_GALLERY_DATA = {
     { path: "cities/san_francisco/DSC_5976.jpg", alt: "San Francisco" },
     { path: "cities/san_francisco/DSC_6044.jpg", alt: "San Francisco" },
     { path: "cities/san_francisco/DSC_6135.jpg", alt: "San Francisco" },
-    { path: "cities/san_francisco/DSC_6143.jpg", alt: "San Francisco" }
+    { path: "cities/san_francisco/DSC_6143.jpg", alt: "San Francisco" },
   ],
-  misc: [
-    { path: "misc/DSC_5995.jpg", alt: "Singapore Airport" }
-  ],
+  misc: [{ path: "misc/DSC_5995.jpg", alt: "Singapore Airport" }],
   nature: [
     { path: "nature/DSC_9551.jpg", alt: "Nature" },
     // Alaska
@@ -57,7 +55,7 @@ export const PHOTO_GALLERY_DATA = {
     { path: "nature/california/DSC_1542.jpg", alt: "California" },
     { path: "nature/california/DSC_6238.jpg", alt: "California" },
     { path: "nature/california/DSC_6274.jpg", alt: "California" },
-    { path: "nature/california/DSC_6304.jpg", alt: "California" },  
+    { path: "nature/california/DSC_6304.jpg", alt: "California" },
     { path: "nature/california/DSC_6331.jpg", alt: "California" },
     { path: "nature/california/DSC_6473.jpg", alt: "California" },
     { path: "nature/california/DSC_7084.jpg", alt: "California" },
@@ -79,6 +77,6 @@ export const PHOTO_GALLERY_DATA = {
     { path: "nature/utah/DSC_2429.jpg", alt: "Utah" },
     { path: "nature/utah/DSC_2872-HDR-Pano.jpg", alt: "Utah" },
     { path: "nature/utah/DSC_2883.jpg", alt: "Utah" },
-    { path: "nature/utah/DSC_2908.jpg", alt: "Utah" }
-  ]
+    { path: "nature/utah/DSC_2908.jpg", alt: "Utah" },
+  ],
 };
