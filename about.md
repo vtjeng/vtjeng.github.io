@@ -9,6 +9,8 @@ description: A bit more about me.
 
 I'm currently at Google DeepMind.
 
+### Cruise
+
 Before Google, I was at [Cruise](https://www.getcruise.com/) for 2+ years, working on simulation
 infrastructure. Some of the problems I worked on include:
 
@@ -27,6 +29,8 @@ Outside of my core responsibilities, I also spent time on:
   codebase.
 - _Improving developer tooling_: My custom settings for VSCode are now the default for our main
   repository used by hundreds of engineers.
+
+### Before That ...
 
 Before Cruise, I interned at [Palantir](https://www.palantir.com/),
 [Benchling](https://www.benchling.com/) and [Jane Street](https://www.janestreet.com/).
