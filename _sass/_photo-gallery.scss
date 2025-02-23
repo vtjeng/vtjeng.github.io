@@ -47,6 +47,31 @@
     transform: translate(-50%, -50%);
   }
 
+  .modal-nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 24px;
+    transition: background 0.3s;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    &#prevButton {
+      left: 20px;
+    }
+
+    &#nextButton {
+      right: 20px;
+    }
+  }
+
   .close {
     position: absolute;
     top: 15px;
