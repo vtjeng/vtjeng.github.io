@@ -115,9 +115,9 @@ is far more convenient if your phone supports it. Comparison shop at [eSIMDB](ht
 ### Payments
 
 You'll be able to pay with your card almost anywhere; and cash is now only really necessary at
-places like hawker centres (you could even try e-payments there if you're willing to set it up ...).
-I still recommend cash for convenience; if you know me personally I'm happy to exchange excess
-Singapore dollars for US dollars.
+places like hawker centres (you could even try e-payments with a QR code at hawker centres if you're
+able to set it up via an app like Grab ...). If you happen to end up with Singapore dollars and know
+me personally I'm happy to exchange them for US dollars.
 
 ### Getting Around
 
