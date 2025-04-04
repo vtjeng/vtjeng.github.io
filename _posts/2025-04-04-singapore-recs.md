@@ -26,29 +26,29 @@ is a popular option in Singapore), but I'll focus here on uniquely local experie
 Hawker centres are a Singaporean cultural institution that I can’t recommend more highly. Think a
 mall food court, but with ~50-100 options for inexpensive and actually tasty food. (Remember the
 [satay scene from Crazy Rich Asians?](https://www.eater.com/2018/9/4/17817658/crazy-rich-asians-singapore-night-market-scene-location)
-That was shot at a hawker center!).
+That was shot at a hawker centre!).
 
 - You don't have to go far from wherever you are to get good hawker food -- I'd recommend picking
-  somewhere nearby and searching "`$HAWKER_CENTER_NAME` best stalls" to see what locals like (e.g.,
-  see a list for [Maxwell Food Center](https://www.misstamchiak.com/maxwell-food-centre/) I found
+  somewhere nearby and searching "`$HAWKER_centre_NAME` best stalls" to see what locals like (e.g.,
+  see a list for [Maxwell Food centre](https://www.misstamchiak.com/maxwell-food-centre/) I found
   with that search).
 - If you must have a list:
-  - [Conde Nast](https://www.cntraveler.com/gallery/best-hawker-centers-in-singapore) identifies
-    some well-known hawker centers with a high concentration of great options.
+  - [Conde Nast](https://www.cntraveler.com/gallery/best-hawker-centres-in-singapore) identifies
+    some well-known hawker centres with a high concentration of great options.
   - The
     [Michelin Guide](https://guide.michelin.com/us/en/singapore-region/singapore/restaurants/street-food)
     identifies specific stalls
   - Just remember that most stalls aren't on any best-of list but are still great!
 - If you're struggling to figure out _what_ to eat: check out Leslie Tay's
   [Top Ten Hawker Dishes and Where to Eat Them](http://ieatishootipost.sg/singapores-top-ten-most-popular-hawker-dishes-and-where-to-eat-them/).
-- _Stay away from..._: Newton Food Centre and Lau Pa Sat are two hawker centers that are far too
+- _Stay away from..._: Newton Food Centre and Lau Pa Sat are two hawker centres that are far too
   touristy for my taste; Newton in particular is overrun with
   [queues and touts](https://www.timeout.com/singapore/restaurants/guide-to-newton-food-centre-tourist-trap-or-hawker-haven).
 
-### Outside Hawker Centres
+### Other Options
 
-Perhaps you've been sold on hawker food but want air conditioning. Here are some options I've had
-and liked, but this list is by no means comprehensive!
+Perhaps you've been sold on local food but want air conditioning. Here are some options I've had and
+liked, but this list is by no means comprehensive!
 
 - [$] [Yakun](https://app.yakun.com/) or [Toast Box](https://toastbox.com.sg/):
   [kaya toast](https://en.wikipedia.org/wiki/Kaya_toast)
@@ -88,7 +88,7 @@ and liked, but this list is by no means comprehensive!
     [Formula 1 Race Tracks](https://maps.app.goo.gl/3oXzpMzWrCqsNMfz5).
 - If you're looking to go further:
   - [East Coast Park](https://maps.app.goo.gl/rSj6S1qGzDfVe15AA) is a lovely linear park (that you
-    can take all the way to the airport). Stop at a hawker center along the way or at the end!
+    can take all the way to the airport). Stop at a hawker centre along the way or at the end!
 
 ### Hikes
 
@@ -115,7 +115,7 @@ is far more convenient if your phone supports it. Comparison shop at [eSIMDB](ht
 ### Payments
 
 You'll be able to pay with your card almost anywhere; and cash is now only really necessary at
-places like hawker centers (you could even try e-payments there if you're willing to set it up ...).
+places like hawker centres (you could even try e-payments there if you're willing to set it up ...).
 I still recommend cash for convenience; if you know me personally I'm happy to exchange excess
 Singapore dollars for US dollars.
 
