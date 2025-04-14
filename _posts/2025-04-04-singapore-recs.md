@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Singapore: Travel Recommendations"
-date: 2025-04-04 12:00:00 -0800
+date: 2025-04-14 12:00:00 -0800
 categories: general
 ---
 
@@ -28,6 +28,9 @@ mall food court, but with ~50-100 options for inexpensive and actually tasty foo
 [satay scene from Crazy Rich Asians?](https://www.eater.com/2018/9/4/17817658/crazy-rich-asians-singapore-night-market-scene-location)
 That was shot at a hawker centre!).
 
+> NOTE: The most convenient way to pay at hawker centers in Singapore is still cash; see section on
+> [payments](#payments) below.
+
 - You don't have to go far from wherever you are to get good hawker food -- I'd recommend picking
   somewhere nearby and searching "`$HAWKER_centre_NAME` best stalls" to see what locals like (e.g.,
   see a list for [Maxwell Food centre](https://www.misstamchiak.com/maxwell-food-centre/) I found
@@ -45,14 +48,26 @@ That was shot at a hawker centre!).
   touristy for my taste; Newton in particular is overrun with
   [queues and touts](https://www.timeout.com/singapore/restaurants/guide-to-newton-food-centre-tourist-trap-or-hawker-haven).
 
+> NOTE: If you like the format of hawker centers but wish there was a version with air-conditioning
+> and that accepts credit cards (... or that prints receipts for expensing), mall food courts are a
+> fine alternative (and, if you're American, likely more enjoyable than what you've experienced at
+> home!). Many malls will have one and I typically just pop into one in the mall I happen to be in;
+> if you're looking for keywords to search with, common brand names include
+> [Food Republic](https://foodrepublic.com.sg/food-republic-outlets/) (most upscale IMO, and
+> includes hawkers with a long history), [Kopitiam](https://www.kopitiam.biz/our-outlets/),
+> [Food Junction](https://www.foodjunction.com/outlets/), and [Kou Fu](https://www.koufu.com.sg/).
+
 ### Other Options
 
-Perhaps you've been sold on local food but want air conditioning. Here are some options I've had and
-liked, but this list is by no means comprehensive!
+Here are other options for local food that I've had or liked. This list is by no means
+comprehensive!
 
-- [$] [Yakun](https://app.yakun.com/) or [Toast Box](https://toastbox.com.sg/):
+(⛓️ marks chains with multiple outlets islandwide.)
+
+- [\$,⛓️] [Yakun](https://app.yakun.com/) or [\$,⛓️] [Toast Box](https://toastbox.com.sg/):
   [kaya toast](https://en.wikipedia.org/wiki/Kaya_toast)
-- [$] [Song Fa](https://songfa.com.sg/): [pork rib soup](https://en.wikipedia.org/wiki/Bak_kut_teh)
+- [$$,⛓️] [Song Fa](https://songfa.com.sg/):
+  [pork rib soup](https://en.wikipedia.org/wiki/Bak_kut_teh)
 - [$$] [The Coconut Club](https://www.thecoconutclub.sg/):
   [Nasi Lemak](https://en.wikipedia.org/wiki/Nasi_lemak)
 - [$$$] [Candlenut](https://www.comodempsey.sg/restaurant/candlenut): Peranakan food
