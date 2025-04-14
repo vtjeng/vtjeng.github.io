@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Singapore: Travel Recommendations"
-date: 2025-04-14 12:00:00 -0800
+date: 2025-04-04 12:00:00 -0800
 categories: general
 ---
 
