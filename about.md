@@ -49,13 +49,14 @@ mathematical maturity by demanding a high degree of rigor.
 
 In addition to those classes, here are some other classes that I really enjoyed:
 
-- [The World of Charlemagne](https://history.mit.edu/subjects/world-charlemagne) by Eric Goldberg
-- [Strobe Project Laboratory](https://edgerton.mit.edu/courses/strobe-project-laboratory) by Jim
-  Bales
+- [The World of Charlemagne](https://web.archive.org/web/20150910101605/http://history.mit.edu/subjects/world-charlemagne)
+  by Eric Goldberg
+- [Strobe Project Laboratory](https://web.archive.org/web/20200922175832/https://edgerton.mit.edu/courses/strobe-project-laboratory)
+  by Jim Bales
 - [Public Finance & Public Policy](http://stellar.mit.edu/S/course/14/fa15/14.41/) by Jonathan
   Gruber
 - [Kitchen Chemistry](https://news.mit.edu/2009/kitchen-chemistry-0220) by Patricia Christie
 - [Art & Science of Negotiation](https://news.mit.edu/2017/class-negotiation-skills-1103) by Bruno
   Verdini
-- [Continuing Conversations](http://concourse.mit.edu/seminar-offerings/) by Linda Rabieh and Anne
-  McCants
+- [Continuing Conversations](https://web.archive.org/web/20250708152609/https://concourse.mit.edu/class/cc-012-continuing-conversations/)
+  by Linda Rabieh and Anne McCants
