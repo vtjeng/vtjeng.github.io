@@ -3,15 +3,19 @@ layout: post
 title: "Singapore: Travel Recommendations"
 date: 2025-04-04 12:00:00 -0800
 categories: general
+image: https://storage.googleapis.com/vtjeng-photos/opengraph_card/DSC_4488_singapore_mount_faber.jpg
 ---
 
-_With ICLR 2025 coming up, many of my friends were asking about my travel recommendations for
-Singapore, so I've decided to publish it here._
+![View of Singapore from Mount Faber](https://storage.googleapis.com/vtjeng-photos/opengraph_card/DSC_4488_singapore_mount_faber.jpg)
 
-This guide is not meant to be a comprehensive "best of" list -- for that, there are travel sites
-like [Conde Nast](https://www.cntraveler.com/gallery/best-things-to-do-in-singapore) (which, in my
-opinion, has put together a great list!) or your friendly local language model. Instead, I've listed
-things that I _personally_ like. Happy to answer questions!
+_Downtown skyscrapers frame Singapore's first ever public housing estate at Tiong Bahru._
+
+> NOTE: This guide is not meant to be a comprehensive "best of" list -- for that, there are travel
+> sites like [Conde Nast](https://www.cntraveler.com/gallery/best-things-to-do-in-singapore) (which,
+> in my opinion, has put together a great list!) or your friendly local language model. Instead,
+> I've listed things that I _personally_ like.
+>
+> Happy to answer questions!
 
 ## Food
 
@@ -70,7 +74,6 @@ comprehensive!
   [pork rib soup](https://en.wikipedia.org/wiki/Bak_kut_teh)
 - [$$] [The Coconut Club](https://www.thecoconutclub.sg/):
   [Nasi Lemak](https://en.wikipedia.org/wiki/Nasi_lemak)
-- [$$$] [Candlenut](https://www.comodempsey.sg/restaurant/candlenut): Peranakan food
 
 ## Sights
 
@@ -132,7 +135,7 @@ is far more convenient if your phone supports it. Comparison shop at [eSIMDB](ht
 You'll be able to pay with your card almost anywhere; and cash is now only really necessary at
 places like hawker centres (you could even try e-payments with a QR code at hawker centres if you're
 able to set it up via an app like Grab ...). If you happen to end up with Singapore dollars and know
-me personally I'm happy to exchange them for US dollars.
+me personally I'm happy to exchange them for US dollars. I'd start with a small amount (e.g., $50).
 
 ### Getting Around
 
