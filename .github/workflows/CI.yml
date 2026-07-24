@@ -22,7 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: "Verify that Prettier does not find any code style issues."
-        uses: creyD/prettier_action@v4.3
+        uses: creyD/prettier_action@v4.6
         with:
           # Without a pin, the action installs the latest Prettier, and new releases
           # change formatting rules and break CI on unchanged files.
