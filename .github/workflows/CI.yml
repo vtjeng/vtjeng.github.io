@@ -27,5 +27,5 @@ jobs:
           # Without a pin, the action installs the latest Prettier, and new releases
           # change formatting rules and break CI on unchanged files.
           # renovate: datasource=npm depName=prettier
-          prettier_version: "3.9.5"
+          prettier_version: "3.9.6"
           prettier_options: . --check
