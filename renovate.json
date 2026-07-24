@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "Prettier version pinned as an input to the format-check action, marked with a `# renovate:` comment naming its datasource.",
+      "managerFilePatterns": ["/^\\.github/workflows/CI\\.yml$/"],
+      "matchStrings": [
+        "# renovate: datasource=(?<datasource>[a-z-]+) depName=(?<depName>\\S+)\\s+[^\\n]*?version=?:? ?\"(?<currentValue>\\d[^\"]+)\""
+      ]
+    }
+  ]
+}
