@@ -4,7 +4,6 @@ title-tag: "Vincent Tjeng"
 permalink: /
 # This description is what is used for SEO purposes.
 description: An overview of my current work, hobbies, and research.
-MathJax: True
 ---
 
 <p style="text-align: center">

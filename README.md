@@ -13,7 +13,7 @@ The key differences are:
   - `head.html` is modified to allow for custom titles.
   - `footer.html` is modified to include only the social links, removing descriptions and contact
     details.
-  - `custom-head.html` adds a favicon and `MathJax` processing.
+  - `custom-head.html` adds a favicon, the Cairo webfont, and Font Awesome.
 
 > :pencil: Note that custom CSS is specified `assets/css/style.scss` (as referenced in the vendored
 > version of `_includes/head.html`), rather than in `assets/main.css`.
