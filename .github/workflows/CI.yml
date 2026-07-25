@@ -15,7 +15,7 @@ concurrency:
   cancel-in-progress: true
 
 # The format check only reads files. With this block present, every scope not
-# listed is set to none, so the third-party action in this job cannot push.
+# listed is set to none.
 permissions:
   contents: read
 
@@ -27,10 +27,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: "Verify that Prettier does not find any code style issues."
-        uses: creyD/prettier_action@v4.3
-        with:
-          # Without a pin, the action installs the latest Prettier, and new releases
-          # change formatting rules and break CI on unchanged files.
-          # renovate: datasource=npm depName=prettier
-          prettier_version: "3.9.6"
-          prettier_options: . --check
+        # Without a pin, npx resolves the latest Prettier, and new releases change
+        # formatting rules and break CI on unchanged files.
+        # renovate: datasource=npm depName=prettier
+        run: npx --yes prettier@3.9.6 . --check

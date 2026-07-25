@@ -4,10 +4,10 @@
   "customManagers": [
     {
       "customType": "regex",
-      "description": "Prettier version pinned as an input to the format-check action, marked with a `# renovate:` comment naming its datasource.",
+      "description": "Prettier version pinned at its call site in the format-check step, marked with a `# renovate:` comment naming its datasource.",
       "managerFilePatterns": ["/^\\.github/workflows/CI\\.yml$/"],
       "matchStrings": [
-        "# renovate: datasource=(?<datasource>[a-z-]+) depName=(?<depName>\\S+)\\s+[^\\n]*?version=?:? ?\"(?<currentValue>\\d[^\"]+)\""
+        "# renovate: datasource=(?<datasource>[a-z-]+) depName=(?<depName>\\S+)\\s+[^\\n]*?@(?<currentValue>\\d[^\\s\"']+)"
       ]
     }
   ]
