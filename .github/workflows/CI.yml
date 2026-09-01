@@ -31,3 +31,18 @@ jobs:
         # formatting rules and break CI on unchanged files.
         # renovate: datasource=npm depName=prettier
         run: npx --yes prettier@3.9.6 . --check
+      - name: "Build the Jekyll site."
+        uses: actions/jekyll-build-pages@v1
+      - name: "Check for route collisions."
+        run: |
+          collision_found=0
+          for proxy_path in functions/*/; do
+            [[ -d "$proxy_path" ]] || continue
+            route=${proxy_path#functions/}
+            route=${route%/}
+            if [[ -e "_site/$route" || -e "_site/$route.html" ]]; then
+              echo "::error::Cloudflare proxy route /$route/ shadows a Jekyll route."
+              collision_found=1
+            fi
+          done
+          exit "$collision_found"
