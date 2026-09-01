@@ -14,8 +14,8 @@ concurrency:
   group: ${{ github.head_ref || github.run_id }}
   cancel-in-progress: true
 
-# The format check only reads files. With this block present, every scope not
-# listed is set to none.
+# These checks only read repository contents. With this block present, every
+# scope not listed is set to none.
 permissions:
   contents: read
 
@@ -31,7 +31,16 @@ jobs:
         # formatting rules and break CI on unchanged files.
         # renovate: datasource=npm depName=prettier
         run: npx --yes prettier@3.9.6 . --check
-      - name: "Build the Jekyll site."
+
+  check-route-collisions:
+    name: "Check Route Collisions"
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v7
+      # This build only creates _site for the collision check below. It does not
+      # upload or deploy the site; GitHub Pages and Cloudflare deploy separately.
+      - name: "Build a temporary Jekyll site."
         uses: actions/jekyll-build-pages@v1
       - name: "Check for route collisions."
         run: |
