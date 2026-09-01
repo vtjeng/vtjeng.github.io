@@ -37,11 +37,19 @@ assets/favicon/
 └── site.webmanifest
 ```
 
-### Configuring a Custom Domain
+### Hosting and project-site proxies
 
-To link a domain to GitHub Pages, I added the `CNAME` file and changed the DNS settings with my
-domain registrar following
-[these instructions](https://gist.github.com/mapsam/ce60b87eea561ea6bdbf).
+Cloudflare Pages builds this repository and serves it at `vtjeng.com`. GitHub Pages also builds the
+repository at `vtjeng.github.io`.
+
+The route files under `functions/` expose selected GitHub Pages project sites at their former
+`vtjeng.com/<repository>/` URLs. Each route calls the shared proxy in
+`_cloudflare/github-pages-proxy.js`; the explicit directory names form the allowlist and prevent a
+repository from colliding with an unrelated personal-site path.
+
+To expose another project, first confirm that `https://vtjeng.github.io/<repository>/` works. Then
+add `functions/<repository>/[[path]].js` with the same wrapper used by the existing routes, passing
+`/<repository>` as the project path.
 
 ## Local Development
 
