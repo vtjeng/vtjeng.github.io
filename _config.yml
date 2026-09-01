@@ -34,4 +34,4 @@ remote_theme: jekyll/minima@296bf6b872b8450529bee1e48d0ca9be200a4be5
 # However, adding it on GitHub pages is complex: https://karas.io/blog/math-support-with-katex-on-github-pages/, https://github.com/KaTeX/KaTeX/issues/2262
 # One of the issues is that the github-pages gem overrides the kramdown math engine. (See https://github.com/github/pages-gem/pull/545 for more.)
 
-exclude: [README.md]
+exclude: [README.md, functions]
