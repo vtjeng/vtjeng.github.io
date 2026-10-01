@@ -30,7 +30,7 @@ jobs:
         # Without a pin, npx resolves the latest Prettier, and new releases change
         # formatting rules and break CI on unchanged files.
         # renovate: datasource=npm depName=prettier
-        run: npx --yes prettier@3.9.6 . --check
+        run: npx --yes prettier@3.9.7 . --check
 
   check-route-collisions:
     name: "Check Route Collisions"
