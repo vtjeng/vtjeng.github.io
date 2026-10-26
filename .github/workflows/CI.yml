@@ -56,6 +56,26 @@ jobs:
           done
           exit "$collision_found"
 
+  check-link-preview-urls:
+    name: "Check Link Preview URLs"
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v7
+      - name: "Build a temporary Jekyll site."
+        uses: actions/jekyll-build-pages@v1
+      # Preview services and search engines need absolute URLs, and Cloudflare Pages redirects any
+      # URL ending in `.html`, so a canonical URL ending in `.html` points at a redirect.
+      - name: "Check that canonical and preview URLs are absolute and do not end in .html."
+        run: |
+          bad=$(grep -rHoE --include='*.html' \
+            '(rel="canonical" href|property="(og:url|og:image|twitter:image)" content)="[^"]*"' _site \
+            | awk -F'="' '{ v = $NF; sub(/"$/, "", v); if (v !~ /^https:\/\// || v ~ /\.html$/) print }')
+          if [[ -n "$bad" ]]; then
+            echo "$bad" | sed 's/^/::error::/'
+            exit 1
+          fi
+
   check-blog-preview:
     name: "Check Blog Preview Image"
     runs-on: ubuntu-latest
