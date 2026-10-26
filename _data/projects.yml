@@ -1,0 +1,76 @@
+# Projects listed on /projects/, in the order shown. Descriptions are Markdown. Thumbnails are 3:2
+# (1200x800) WebP files in assets/images/projects/.
+
+research:
+  - name: MIPVerify.jl
+    url: /MIPVerify.jl/
+    image: /assets/images/projects/mipverify.webp
+    image_alt:
+      A handwritten 7, and the same image with six pixels changed, which the network classifies as
+      9.
+    description: >-
+      I wrote this Julia package for my [research on verifying neural
+      networks](/#evaluating-robustness-of-neural-networks-with-mixed-integer-programming). Given a
+      trained network, it finds the smallest change to an input that changes the network's answer,
+      or proves that no such change exists within a given bound.
+    links:
+      - label: Docs
+        url: /MIPVerify.jl/
+      - label: Code
+        url: https://github.com/vtjeng/MIPVerify.jl
+
+fun:
+  - name: Hay Day Tileplacer
+    url: https://hay-day-tileplacer.vtjeng.com/
+    image: /assets/images/projects/hay-day-tileplacer.webp
+    image_alt: Hay Day canal tiles laid out to spell "hi".
+    description: >-
+      I made this as a gift for my mum, who enjoys playing [Hay Day](https://hayday.com/) and has a
+      lot of fun planning decorations for her farm. It previews how the game's decorative tiles
+      connect, allowing her to try out a layout before building it.
+
+  - name: SF Sunset Watch
+    url: https://sunset.vtjeng.com/
+    image: /assets/images/projects/sf-sunset-watch.webp
+    image_alt: Alcatraz under a pink sky at sunset, with the moon rising over the East Bay hills.
+    description: >-
+      I love photographing San Francisco's sunsets, but nothing is worse than clearing an evening
+      only to watch the sun vanish behind a layer of low cloud. After one such evening at Grandview
+      Park (go if you haven't been!), I built a page that shows the sky from several cameras and
+      predicts how beautiful each evening's sunset will be. (Yes, the predictions come from AI.) You
+      can compare past predictions with photos of the actual sunsets to see how good they were.
+
+  - name: AP Poll Tracker
+    url: https://ap-poll.vtjeng.com/
+    image: /assets/images/projects/ap-poll.webp
+    image_alt: Step chart of six teams' AP Top 25 ranks through the 2025 season.
+    description: >-
+      I have complicated feelings about college football, from [athlete
+      health](https://www.espn.com/college-football/story/_/id/24342005/maryland-terrapins-football-culture-toxic-coach-dj-durkin)
+      and [CTE](https://www.nytimes.com/interactive/2023/11/16/us/cte-youth-football.html) to [the
+      upheaval of the transfer portal and NIL](https://www.youtube.com/watch?v=ym2sWsCWShc). Still,
+      every fall I look forward to Sundays at 11am PT, when the AP Poll reshuffles after the
+      previous day's chaos. This chart of every poll since 1989 reminded me how dominant Georgia was
+      in 2022, how disrespected Arizona State was in 2024, and how rare Clemson's 2025 collapse was.
+
+  - name: Teleport Challenge Leaderboard
+    url: /tc-leaderboard/
+    image: /assets/images/projects/tc-leaderboard.webp
+    image_alt: Step chart of each team's points over the past month.
+    description: >-
+      I'm taking part in the [Teleport Coding Challenge](https://mazesofmenace.ai/), a contest to
+      port NetHack (all 442,901 lines of C and Lua!) to JavaScript using coding agents. This
+      leaderboard charts every team's score over time, so I can compare my progress with other
+      participants' (many of whom I have plenty to learn from). For a while, I watched it like a
+      hawk.
+
+  - name: Western States 100
+    url: https://western-states.vtjeng.com/
+    image: /assets/images/projects/western-states.webp
+    image_alt: Scatter plot of each year's ten fastest women's and men's finish times since 1974.
+    description: >-
+      The 2026 Western States 100 was one of the fastest on record: both course records fell (four
+      men beat the previous men's record!), and the tenth woman's time ranks 16th among women's
+      finishes ever. I built this while watching the results come in, both to grasp the size of the
+      leap at the top of the field and to follow any of the 7,000+ runners who have finished since
+      1974.

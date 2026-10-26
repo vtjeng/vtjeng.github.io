@@ -27,6 +27,7 @@ Outside of work, my hobbies include photography, Cuban salsa, and hiking.
 <!-- prettier-ignore -->
 [[Paper]](https://arxiv.org/abs/1711.07356)
 [[Code]](https://github.com/vtjeng/MIPVerify.jl)
+[[Docs]](/MIPVerify.jl/)
 | [[MIT News]](https://news.mit.edu/2019/how-tell-whether-machine-learning-systems-are-robust-enough-real-worl-0510)
 {: .byline-links}
 
