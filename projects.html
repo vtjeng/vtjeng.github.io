@@ -1,0 +1,52 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+description: Research software and side projects I've built for fun.
+---
+
+<!-- Entries live in _data/projects.yml. -->
+<h2>Research software</h2>
+{%- for project in site.data.projects.research %}
+<!-- Same columns as the Fun grid: thumbnail on the left, text on the right. -->
+<div class="project-grid project-feature">
+  <a class="project-thumb" href="{{ project.url }}" tabindex="-1" aria-hidden="true">
+    <img
+      src="{{ project.image | relative_url }}"
+      alt="{{ project.image_alt }}"
+      width="1200"
+      height="800"
+      loading="lazy"
+    />
+  </a>
+  <div>
+    <h3>{{ project.name }}</h3>
+    {{ project.description | markdownify }}
+    <p class="byline-links">
+      {%- for link in project.links %}
+      <a href="{{ link.url }}">[{{ link.label }}]</a>
+      {%- endfor %}
+    </p>
+  </div>
+</div>
+{%- endfor %}
+
+<h2 class="project-section-break">Fun</h2>
+<ul class="project-grid">
+  {%- for project in site.data.projects.fun %}
+  <li class="project-card">
+    <!-- The title carries the link for keyboard and screen-reader users; the image repeats it for pointers. -->
+    <a class="project-thumb" href="{{ project.url }}" tabindex="-1" aria-hidden="true">
+      <img
+        src="{{ project.image | relative_url }}"
+        alt="{{ project.image_alt }}"
+        width="1200"
+        height="800"
+        loading="lazy"
+      />
+    </a>
+    <h3><a href="{{ project.url }}">{{ project.name }}</a></h3>
+    {{ project.description | markdownify }}
+  </li>
+  {%- endfor %}
+</ul>

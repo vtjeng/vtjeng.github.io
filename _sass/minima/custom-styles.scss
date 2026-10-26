@@ -9,6 +9,54 @@
   font-size: 85%;
 }
 
+// Space, rather than a rule, separates the Fun section from the research entry above it.
+.post-content .project-section-break {
+  margin-top: $spacing-unit * 1.5;
+}
+
+.project-grid {
+  list-style: none;
+  margin: 0;
+  display: grid;
+  // Two 355px columns fill the 740px content column; once a column would drop below 280px, the
+  // grid folds to one. `min` keeps a single column from overflowing a phone narrower than 280px.
+  grid-template-columns: repeat(auto-fill, minmax(#{"min(100%, 280px)"}, 1fr));
+  gap: $spacing-unit;
+}
+
+.project-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+}
+
+// The research entry's title lines up with the top of its thumbnail.
+.post-content .project-feature h3 {
+  margin-top: 0;
+}
+
+.project-card {
+  h3 {
+    margin-top: $spacing-unit * 0.5;
+    margin-bottom: $spacing-unit * 0.25;
+  }
+
+  // Titles match the other headings on the page; the thumbnail above already signals the link.
+  h3 a {
+    color: inherit;
+
+    &:hover {
+      color: #23c262;
+    }
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .main-links {
   text-align: center;
 }
