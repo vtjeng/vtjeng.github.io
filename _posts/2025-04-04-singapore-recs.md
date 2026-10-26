@@ -3,6 +3,7 @@ layout: post
 title: "Singapore: Travel Recommendations"
 date: 2025-04-04 12:00:00 -0800
 categories: general
+description: My personal picks for Singapore, outside of what great travel guides already recommend.
 image: https://storage.googleapis.com/vtjeng-photos/opengraph_card/DSC_4488_singapore_mount_faber.jpg
 ---
 

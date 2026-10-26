@@ -2,7 +2,9 @@
 layout: page
 title: Blog
 permalink: /blog/
-description: Some technical musings.
+description: Occasional posts, from travel recommendations to technical notes.
+# Link previews show the latest post's image. Update this when publishing a new post.
+image: https://storage.googleapis.com/vtjeng-photos/opengraph_card/DSC_4488_singapore_mount_faber.jpg
 ---
 
 <div class="home">
