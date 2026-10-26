@@ -54,7 +54,7 @@ fun:
       in 2022, how disrespected Arizona State was in 2024, and how rare Clemson's 2025 collapse was.
 
   - name: Teleport Challenge Leaderboard
-    url: /tc-leaderboard/
+    url: https://tc-leaderboard.vtjeng.com/
     image: /assets/images/projects/tc-leaderboard.webp
     image_alt: Step chart of each team's points over the past month.
     description: >-
