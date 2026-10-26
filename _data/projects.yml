@@ -37,8 +37,8 @@ fun:
       I love photographing San Francisco's sunsets, but nothing is worse than clearing an evening
       only to watch the sun vanish behind a layer of low cloud. After one such evening at Grandview
       Park (go if you haven't been!), I built a page that shows the sky from several cameras and
-      uses AI to predict how beautiful each evening's sunset will be. You can compare past
-      predictions with photos of the actual sunsets to see how good they were.
+      predicts how beautiful each evening's sunset will be. (Yes, the predictions come from AI.) You
+      can compare past predictions with photos of the actual sunsets to see how good they were.
 
   - name: AP Poll Tracker
     url: https://ap-poll.vtjeng.com/
