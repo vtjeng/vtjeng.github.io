@@ -45,11 +45,13 @@ fun:
     image: /assets/images/projects/ap-poll.webp
     image_alt: Stepped line chart of six teams' AP Top 25 ranks through the 2025 season.
     description: >-
-      I have complicated feelings about college football, from athlete health and CTE to the
-      upheaval of the transfer portal and NIL. Still, every fall I look forward to Sundays at 11am
-      PT, when the AP Poll reshuffles after the previous day's chaos. This chart of every poll since
-      1989 reminded me how dominant Georgia was in 2022, how disrespected Arizona State was in 2024,
-      and how rare Clemson's 2025 collapse was.
+      I have complicated feelings about college football, from [athlete
+      health](https://www.espn.com/college-football/story/_/id/24342005/maryland-terrapins-football-culture-toxic-coach-dj-durkin)
+      and [CTE](https://www.nytimes.com/interactive/2023/11/16/us/cte-youth-football.html) to [the
+      upheaval of the transfer portal and NIL](https://www.youtube.com/watch?v=ym2sWsCWShc). Still,
+      every fall I look forward to Sundays at 11am PT, when the AP Poll reshuffles after the
+      previous day's chaos. This chart of every poll since 1989 reminded me how dominant Georgia was
+      in 2022, how disrespected Arizona State was in 2024, and how rare Clemson's 2025 collapse was.
 
   - name: Teleport Challenge Leaderboard
     url: /tc-leaderboard/
