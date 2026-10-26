@@ -20,16 +20,14 @@ research:
         url: https://github.com/vtjeng/MIPVerify.jl
 
 fun:
-  - name: AP Poll Tracker
-    url: https://ap-poll.vtjeng.com/
-    image: /assets/images/projects/ap-poll.webp
-    image_alt: Stepped line chart of six teams' AP Top 25 ranks through the 2025 season.
+  - name: Hay Day Tileplacer
+    url: https://hay-day-tileplacer.vtjeng.com/
+    image: /assets/images/projects/hay-day-tileplacer.webp
+    image_alt: Hay Day canal tiles laid out to spell "hi".
     description: >-
-      I have complicated feelings about college football, from athlete health and CTE to the
-      upheaval of the transfer portal and NIL. Still, every fall I look forward to Sundays at 11am
-      PT, when the AP Poll reshuffles after the previous day's chaos. This chart of every poll since
-      1989 reminded me how dominant Georgia was in 2022, how disrespected Arizona State was in 2024,
-      and how rare Clemson's 2025 collapse was.
+      I made this as a gift for my mum, who enjoys playing [Hay Day](https://hayday.com/) and has a
+      lot of fun planning decorations for her farm. It previews how canal, ditch and sand-path
+      pieces connect, allowing her to try out a layout before building it in the game.
 
   - name: SF Sunset Watch
     url: https://sunset.vtjeng.com/
@@ -42,6 +40,17 @@ fun:
       how beautiful each evening's sunset will be. You can compare past predictions with photos of
       the actual sunsets to see how good they were.
 
+  - name: AP Poll Tracker
+    url: https://ap-poll.vtjeng.com/
+    image: /assets/images/projects/ap-poll.webp
+    image_alt: Stepped line chart of six teams' AP Top 25 ranks through the 2025 season.
+    description: >-
+      I have complicated feelings about college football, from athlete health and CTE to the
+      upheaval of the transfer portal and NIL. Still, every fall I look forward to Sundays at 11am
+      PT, when the AP Poll reshuffles after the previous day's chaos. This chart of every poll since
+      1989 reminded me how dominant Georgia was in 2022, how disrespected Arizona State was in 2024,
+      and how rare Clemson's 2025 collapse was.
+
   - name: Teleport Challenge Leaderboard
     url: /tc-leaderboard/
     image: /assets/images/projects/tc-leaderboard.webp
@@ -52,15 +61,6 @@ fun:
       leaderboard charts every team's score over time, allowing me to compare my progress with other
       participants' (many of whom I have plenty to learn from). For a while, I watched it like a
       hawk.
-
-  - name: Hay Day Tileplacer
-    url: https://hay-day-tileplacer.vtjeng.com/
-    image: /assets/images/projects/hay-day-tileplacer.webp
-    image_alt: Hay Day canal tiles laid out to spell "hi".
-    description: >-
-      I made this as a gift for my mum, who enjoys playing [Hay Day](https://hayday.com/) and has a
-      lot of fun planning decorations for her farm. It previews how canal, ditch and sand-path
-      pieces connect, allowing her to try out a layout before building it in the game.
 
   - name: Western States 100
     url: https://western-states.vtjeng.com/
