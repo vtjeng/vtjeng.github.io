@@ -55,3 +55,26 @@ jobs:
             fi
           done
           exit "$collision_found"
+
+  check-blog-preview:
+    name: "Check Blog Preview Image"
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v7
+      # Link previews of /blog/ show the latest post's image, which blog.md sets by hand.
+      - name: "Check that blog.md uses the latest post's image."
+        run: |
+          latest=$(ls _posts | sort | tail -n 1)
+          # `|| true` keeps a missing image line from ending the script, under `bash -e`, before the
+          # error below.
+          post_image=$(grep -m 1 '^image:' "_posts/$latest" || true)
+          blog_image=$(grep -m 1 '^image:' blog.md || true)
+          if [[ -z "$post_image" ]]; then
+            echo "::error file=_posts/$latest::Add an image line, which link previews of the post and of /blog/ show."
+            exit 1
+          fi
+          if [[ "$post_image" != "$blog_image" ]]; then
+            echo "::error file=blog.md::Copy the image line from _posts/$latest into blog.md: $post_image"
+            exit 1
+          fi
