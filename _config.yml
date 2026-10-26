@@ -2,14 +2,16 @@ title: Vincent Tjeng
 author: ""
 description: Vincent Tjeng's Personal Site
 baseurl: "" # the subpath of your site, e.g. /blog
-# Note: the `github-metadata` gem (https://github.com/jekyll/github-metadata/) populates the `url` field.
+# Link previews need absolute image URLs, and jekyll-seo-tag builds them from `url`. GitHub Pages
+# fills `url` in through github-metadata, but the Cloudflare Pages build of vtjeng.com does not.
+url: https://vtjeng.com
 
 ## For `jekyll-seo-tag`
 # https://github.com/jekyll/jekyll-seo-tag/blob/v2.6.1/docs/usage.md
 
 twitter:
   username: VincentTjeng
-  card: summary
+  card: summary_large_image
 
 social:
   name: Vincent Tjeng
