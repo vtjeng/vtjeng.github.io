@@ -10,9 +10,9 @@ research:
       9.
     description: >-
       I wrote this Julia package for my [research on verifying neural
-      networks](/#evaluating-robustness-of-neural-networks-with-mixed-integer-programming). Given a
-      trained network, it finds the smallest change to an input that changes the network's answer,
-      or proves that no such change exists within a given bound.
+      networks](/#evaluating-robustness-of-neural-networks-with-mixed-integer-programming). For a
+      limited change to an input image, the code can prove that the network's predicted category
+      stays the same -- or find a counterexample.
     links:
       - label: Docs
         url: /MIPVerify.jl/
@@ -37,8 +37,8 @@ fun:
       I love photographing San Francisco's sunsets, but nothing is worse than clearing an evening
       only to watch the sun vanish behind a layer of low cloud. After one such evening at Grandview
       Park (go if you haven't been!), I built a page that shows the sky from several cameras and
-      predicts how beautiful each evening's sunset will be. (Yes, the predictions come from AI.) You
-      can compare past predictions with photos of the actual sunsets to see how good they were.
+      predicts how beautiful each evening's sunset will be. (*Yes, the predictions come from AI.*)
+      You can compare past predictions with photos of the actual sunsets to see how good they were.
 
   - name: AP Poll Tracker
     url: https://ap-poll.vtjeng.com/
@@ -71,6 +71,6 @@ fun:
     description: >-
       The 2026 Western States 100 was one of the fastest on record: both course records fell (four
       men beat the previous men's record!), and the tenth woman's time ranks 16th among women's
-      finishes ever. I built this while watching the results come in, both to grasp the size of the
-      leap at the top of the field and to follow any of the 7,000+ runners who have finished since
-      1974.
+      finishes ever. I built this dashboard while watching the first finishers come in to grasp the
+      size of the leap at the top of the field. Then, I had fun digging into the stories of some of
+      the other finishers.
