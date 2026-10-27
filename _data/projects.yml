@@ -10,9 +10,9 @@ research:
       9.
     description: >-
       I wrote this Julia package for my [research on verifying neural
-      networks](/#evaluating-robustness-of-neural-networks-with-mixed-integer-programming). It finds
-      the smallest change to an input that makes a trained network give a different answer. It can
-      also prove that changes below a given size won't affect the answer.
+      networks](/#evaluating-robustness-of-neural-networks-with-mixed-integer-programming). For a
+      limited change to an input image, the code can prove that the network's predicted category
+      stays the same -- or find a counterexample.
     links:
       - label: Docs
         url: /MIPVerify.jl/
