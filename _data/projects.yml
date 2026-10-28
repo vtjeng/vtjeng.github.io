@@ -74,3 +74,28 @@ fun:
       finishes ever. I built this dashboard while watching the first finishers come in to grasp the
       size of the leap at the top of the field. Then, I had fun digging into the stories of some of
       the other finishers.
+
+  - name: Tennis Rankings Tracker
+    url: https://tennis.vtjeng.com/
+    image: /assets/images/projects/tennis-rankings.webp
+    image_alt: Step chart of the WTA's top six players' ranking points over the past year.
+    description: >-
+      This chart plots the top 150 of every weekly ATP list since 1973 and every WTA list since
+      1984. Did I build it to see how dominant men's tennis's Big Three were in their prime? To
+      watch Elena Rybakina finally end Aryna Sabalenka's two-year reign at No. 1? Or was I just
+      curious how little guidance Claude Code would need to build a tennis rankings site if I
+      pointed it at the code for [AP Poll Tracker](https://ap-poll.vtjeng.com/)? You'll never
+      know...
+
+  - name: Chess Ratings Tracker
+    url: https://chess.vtjeng.com/
+    image: /assets/images/projects/chess-ratings.webp
+    image_alt:
+      The position after Kasparov's 24. Rxd4 against Topalov at Wijk aan Zee in 1999, beside a chart
+      of both players' ratings.
+    description: >-
+      A shameless copy of the [Tennis Rankings Tracker](https://tennis.vtjeng.com/), this time
+      charting the top 100 on every FIDE rating list since 1971. Even though I built it purely for
+      fun, I did end up learning a bunch about chess ratings: for example, after a seemingly
+      inexorable rise from the 1980s to the 2010s, the rating it takes to make the top 100 on both
+      the Open and Women lists has been slipping since 2022.
