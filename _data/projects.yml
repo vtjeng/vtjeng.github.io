@@ -1,5 +1,9 @@
 # Projects listed on /projects/, in the order shown. Descriptions are Markdown. Thumbnails are 3:2
 # (1200x800) WebP files in assets/images/projects/.
+#
+# The AP Poll, Tennis Rankings and Chess Ratings trackers draw their own thumbnails to dist/thumbnail.png
+# (see the link card row of each repository's README). Convert one with Pillow:
+#   python3 -c 'from PIL import Image; Image.open("thumbnail.png").save("NAME.webp", quality=85, method=6)'
 
 research:
   - name: MIPVerify.jl
