@@ -2,6 +2,13 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended"],
   "minimumReleaseAge": "14 days",
+  "timezone": "America/Los_Angeles",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["* * 1 1,4,7,10 *"],
+    "branchTopic": "quarterly-bundle-update",
+    "commitMessageAction": "Quarterly bundle update"
+  },
   "customManagers": [
     {
       "customType": "regex",
