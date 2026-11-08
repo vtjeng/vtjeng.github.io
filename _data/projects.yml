@@ -31,8 +31,8 @@ tools:
     description: >-
       I built Session Atlas to understand how I use my AI coding tools. It brings my Claude Code and
       Codex sessions into one timeline, puts my inputs center stage, and lets me revisit agent
-      responses. It also shows statistics regarding my usage (including estimated cost at API list
-      prices). Best of all, everything runs locally.
+      responses. It also shows fun statistics regarding my usage (including estimated cost at API
+      list prices). Best of all, everything runs locally.
 
 fun:
   - name: Hay Day Tileplacer
