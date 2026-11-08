@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: Research software I maintain, and side projects I've built for fun.
+description: Research software, tools, and side projects I've built for fun.
 # Link previews show a 2x2 collage of four project thumbnails, cropped to the 1.91:1 preview shape.
 image: /assets/images/projects/social-card.jpg
 ---
@@ -32,9 +32,11 @@ image: /assets/images/projects/social-card.jpg
 </div>
 {%- endfor %}
 
-<h2 class="project-section-break">Fun</h2>
+<!-- Tools and Fun share the same project-card layout. -->
+{%- assign card_sections = "tools,fun" | split: "," %} {%- for section in card_sections %}
+<h2 class="project-section-break">{{ section | capitalize }}</h2>
 <ul class="project-grid">
-  {%- for project in site.data.projects.fun %}
+  {%- for project in site.data.projects[section] %}
   <li class="project-card">
     <!-- The title carries the link for keyboard and screen-reader users; the image repeats it for pointers. -->
     <a class="project-thumb" href="{{ project.url }}" tabindex="-1" aria-hidden="true">
@@ -51,3 +53,4 @@ image: /assets/images/projects/social-card.jpg
   </li>
   {%- endfor %}
 </ul>
+{%- endfor %}
