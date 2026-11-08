@@ -29,11 +29,10 @@ tools:
     image: /assets/images/projects/session-atlas.webp
     image_alt: Session Atlas's daily activity bar chart, illustrated with synthetic data.
     description: >-
-      I wanted to understand how I was using my AI coding tools and where I could improve my
-      workflow. Since that record was scattered across multiple Claude Code and Codex sessions, I
-      built Session Atlas to show everything in one timeline. Session Atlas puts my inputs center
-      stage, enables me to revisit my agent's responses, and (mostly for fun) estimates what my
-      usage would have cost at API list prices. Best of all, everything runs locally.
+      I built Session Atlas to understand how I use my AI coding tools. It brings my Claude Code and
+      Codex sessions into one timeline, puts my inputs center stage, and lets me revisit agent
+      responses. Mostly for fun, it also estimates what my usage would cost at API list prices. Best
+      of all, everything runs locally.
 
 fun:
   - name: Hay Day Tileplacer
