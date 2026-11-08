@@ -9,7 +9,7 @@
   font-size: 85%;
 }
 
-// Space, rather than a rule, separates the Fun section from the research entry above it.
+// Space, rather than a rule, separates the project sections.
 .post-content .project-section-break {
   margin-top: $spacing-unit * 1.5;
 }
@@ -32,7 +32,12 @@
   border-radius: 4px;
 }
 
-// The research entry's title lines up with the top of its thumbnail.
+// A single project fills its section and reuses the grid for image and description columns.
+.project-feature {
+  grid-column: 1 / -1;
+}
+
+// Featured project titles line up with the top of their thumbnails.
 .post-content .project-feature h3 {
   margin-top: 0;
 }
@@ -43,7 +48,7 @@
     margin-bottom: $spacing-unit * 0.25;
   }
 
-  // Titles match the other headings on the page; the thumbnail above already signals the link.
+  // Titles match the other headings; each thumbnail already signals the link.
   h3 a {
     color: inherit;
 

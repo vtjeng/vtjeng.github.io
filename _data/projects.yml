@@ -23,6 +23,17 @@ research:
       - label: Code
         url: https://github.com/vtjeng/MIPVerify.jl
 
+tools:
+  - name: Session Atlas
+    url: https://github.com/vtjeng/session-atlas
+    image: /assets/images/projects/session-atlas.webp
+    image_alt: Session Atlas's daily activity bar chart, illustrated with synthetic data.
+    description: >-
+      I built Session Atlas to understand how I use my AI coding tools. It brings my Claude Code and
+      Codex sessions into one timeline, puts my inputs center stage, and lets me revisit agent
+      responses. It also shows fun statistics regarding my usage (including estimated cost at API
+      list prices). Best of all, everything runs locally.
+
 fun:
   - name: Hay Day Tileplacer
     url: https://hay-day-tileplacer.vtjeng.com/
