@@ -36,12 +36,17 @@ jobs:
     name: "Check Route Collisions"
     runs-on: ubuntu-latest
 
+    env:
+      BUNDLE_FROZEN: "true"
+
     steps:
       - uses: actions/checkout@v7
-      # This build only creates _site for the collision check below. It does not
-      # upload or deploy the site; GitHub Pages and Cloudflare deploy separately.
-      - name: "Build a temporary Jekyll site."
-        uses: actions/jekyll-build-pages@v1
+      - uses: ruby/setup-ruby@20eb24b0d509e2b9ed9b6d42ddfeb992915e0564 # v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+      - name: "Build with the committed Gemfile.lock."
+        run: bundle exec jekyll build
       - name: "Check for route collisions."
         run: |
           collision_found=0
