@@ -2,7 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended"],
   "minimumReleaseAge": "14 days",
-  "constraints": { "ruby": "3.3" },
   "timezone": "America/Los_Angeles",
   "lockFileMaintenance": {
     "enabled": true,
@@ -10,6 +9,14 @@
     "branchTopic": "quarterly-bundle-update",
     "commitMessageAction": "Quarterly bundle update"
   },
+  "packageRules": [
+    {
+      "description": "Review major Ruby upgrades in the dependency dashboard while the Pages bundle requires Ruby below 4.",
+      "matchManagers": ["ruby-version"],
+      "matchUpdateTypes": ["major"],
+      "dependencyDashboardApproval": true
+    }
+  ],
   "customManagers": [
     {
       "customType": "regex",
