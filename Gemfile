@@ -6,6 +6,6 @@ group :jekyll_plugins do
   # We use the `github-pages` gem to ensure that we are compatible with displaying on GitHub Pages.
   # More on gems supported in GitHub Pages: https://pages.github.com/versions/
   # Note that this includes the "minima" gem for example.
-  gem "github-pages", "= 232"
+  gem "github-pages", "= 233"
 end
 
