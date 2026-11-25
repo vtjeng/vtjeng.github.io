@@ -72,7 +72,14 @@ fun:
     url: https://title-paths.vtjeng.com/
     image: /assets/images/projects/title-paths.webp
     image_alt: Tennessee's branching paths to the SEC championship game.
-    description: ""
+    description: >-
+      Rivalry Week is one of my favorite weeks in college football, especially when conference
+      championship spots are still up for grabs (hello, [7-5 Duke in the 2025 ACC Championship
+      Game!](https://www.nytimes.com/athletic/7447171/2026/07/15/acc-championship-game-tiebreaker-policy/)).
+      In 2026, six teams could still make the Big Ten title game and nine (!) could make the
+      American's. I built this interactive visualization, inspired by the Upshot's NFL Playoff
+      Picture Visualization, to untangle the scenarios. Explore why Ohio State needed Wisconsin to
+      beat Minnesota, or how Texas could miss the championship game even with a win!
 
   - name: Teleport Challenge Leaderboard
     url: https://tc-leaderboard.vtjeng.com/
