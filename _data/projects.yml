@@ -77,9 +77,9 @@ fun:
       championship spots are still up for grabs (e.g., six teams in 2026 for the Big Ten) or arcane
       tiebreaker rules lead to unexpected outcomes (hello, [7-5 Duke in the 2025 ACC Championship
       Game!](https://www.nytimes.com/athletic/7447171/2026/07/15/acc-championship-game-tiebreaker-policy/)).
-      I built this interactive visualization, inspired by the Upshot's NFL Playoff
-      Picture Visualization, to untangle the scenarios. Explore why Ohio State needed Wisconsin to
-      beat Minnesota, or how Texas could miss the championship game even with a win!
+      I built this interactive visualization, inspired by the Upshot's NFL Playoff Picture
+      Visualization, to untangle the scenarios. Explore why Ohio State needed Wisconsin to beat
+      Minnesota, or how Texas could miss the championship game even with a win!
 
   - name: Teleport Challenge Leaderboard
     url: https://tc-leaderboard.vtjeng.com/
