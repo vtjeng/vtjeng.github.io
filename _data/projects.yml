@@ -68,6 +68,20 @@ fun:
       previous day's chaos. This chart of every poll since 1989 reminded me how dominant Georgia was
       in 2022, how disrespected Arizona State was in 2024, and how rare Clemson's 2025 collapse was.
 
+  - name: Championship Saturday
+    url: https://title-paths.vtjeng.com/
+    image: /assets/images/projects/title-paths.webp
+    image_alt: Tennessee's branching paths to the SEC championship game.
+    description: >-
+      Rivalry Week is one of my favorite weeks in college football, especially when conference
+      championship spots are still up for grabs (e.g., six teams in 2026 for the Big Ten) or arcane
+      tiebreaker rules lead to unexpected outcomes (hello, [7-5 Duke in the 2025 ACC Championship
+      Game!](https://www.nytimes.com/athletic/7447171/2026/07/15/acc-championship-game-tiebreaker-policy/)).
+      In preparation for Rivalry Week 2026, I built this interactive visualization, inspired by [the
+      Upshot](https://www.nytimes.com/interactive/2023/01/07/upshot/nfl-playoff-picture-week-18.html),
+      to untangle the scenarios. Explore why Ohio State needed Wisconsin to beat Minnesota, or how
+      Texas could miss the championship game even with a win!
+
   - name: Teleport Challenge Leaderboard
     url: https://tc-leaderboard.vtjeng.com/
     image: /assets/images/projects/tc-leaderboard.webp
